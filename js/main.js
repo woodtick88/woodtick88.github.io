@@ -158,7 +158,9 @@
 
 		headeSlider.on('beforeChange', function(event, slick, currentSlide, nextSlide){	
 
-			new WOW().init();
+			new WOW().init({
+				mobile: false
+			});
 
 		});
 
@@ -234,7 +236,9 @@
 
 	if ( $('.wow').length ) {
 
-		new WOW().init();
+		new WOW().init({
+			mobile: false
+		});
 
 	};
 
